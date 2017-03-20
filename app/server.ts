@@ -12,7 +12,7 @@ const app: express.Application = express();
 const port: number = process.env.PORT || 3000;
 
 // Mount the WelcomeController at the /welcome route
-app.use('/welcome', WelcomeController);
+app.use('/', WelcomeController);
 
 // Serve the application at the given port
 app.listen(port, () => {
