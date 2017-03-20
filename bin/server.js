@@ -10,7 +10,7 @@ const app = express();
 // The port the express app will listen on
 const port = process.env.PORT || 3000;
 // Mount the WelcomeController at the /welcome route
-app.use('/welcome', controllers_1.WelcomeController);
+app.use('/', controllers_1.WelcomeController);
 // Serve the application at the given port
 app.listen(port, () => {
     // Success callback
